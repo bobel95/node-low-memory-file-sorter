@@ -1,4 +1,4 @@
-import { splitFileToSortedBatches, compareRows } from './utils/batches-sort.js';
+import { splitFileToSortedBatches } from './utils/batches-sort.js';
 import { mergeSortedBatches } from './utils/batches-merge.js';
 
 export const PATH_TO_LOGS_FILE = 'mock_logs.txt';
@@ -13,6 +13,7 @@ async function getLogsSortedByTraceIdAndDate() {
 
 }
 
-getLogsSortedByTraceIdAndDate();
+getLogsSortedByTraceIdAndDate()
+    .then(() => console.log( 'Done!' ));
 
 
