@@ -1,0 +1,13 @@
+{
+  "name": "no-memory-logs-sorter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "generate-logs": "node generateLogs.js",
+    "start": "node --max-old-space-size=5 index.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
