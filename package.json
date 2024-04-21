@@ -4,9 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "generate-logs": "node generateLogs.js",
-    "start": "node --max-old-space-size=5 index.js",
-    "test": "jest"
+    "generate-logs": "node utils/generate-logs.js",
+    "start": "node --max-old-space-size=5 index.js"
   },
   "author": "",
   "license": "ISC"
